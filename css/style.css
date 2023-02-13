@@ -112,7 +112,7 @@ a {
     /* debug */
     height: 500px;
     padding: 100px 0;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .jumbotron .container {
@@ -150,7 +150,6 @@ a {
 main .container {
     width: 60%;
     margin: 0 auto;
-    margin-top: 100px;
     /* debug */
     border: 1px solid black;
     /* height: 300vh; */
@@ -283,13 +282,12 @@ main .container {
 /* Members */
 .members {
     width: 100%;
-    height: 300px;
     /* debug */
     border: 3px solid black;
 }
 
 .memb-view {
-    height: 100%;
+    height: 200px;
     display: flex;
 }
 
@@ -312,6 +310,75 @@ main .container {
     height: 50%;
     border: 1px solid black;
 }
+
+.try-section {
+    width: 100%;
+    margin: 0 auto;
+    /* debug */
+    border: 1px solid orangered;
+    height: 120px;
+    background-color: var(--jumbotron-backgroundcolor);
+}
 /* /Members */
 
+/* FAQ */
+
+.faq {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.section-title {
+    width: 100%;
+    height: 80px;
+    /* debug */
+    border: 2px solid orangered;
+}
+
+.question {
+    width: 100%;
+    height: 80px;
+    /* debug */
+    border: 2px solid lightcoral;
+}
+/* /FAQ */
 /* /MAIN */
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    padding: 40px 0;
+}
+footer .container {
+    width: 60%;
+    margin: 0 auto;
+    /* debug */
+    border: 1px solid white;
+    height: 300px;
+    position: relative;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+}
+
+footer .col {
+    width: calc(100% / 5 - 10px);
+    /* debug */
+    height: 100%;    
+    border: 3px solid lightgreen;
+}
+
+span.language {
+    height: 50px;
+    width: 100px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* /FOOTER */
