@@ -55,7 +55,7 @@ a {
 
 .navigation {
     /* debug */
-    width: 100%;
+    width: 60%;
     height: 100%;
 }
 
@@ -79,10 +79,18 @@ a {
     width: 30%;
     height: 100%;
     border: 1px solid blue;
+    justify-content: flex-end;
 }
 
+.right .navigation {
+    width: 80%;
+}
+.small-button {
+    width: 20%;
+}
 .small-button span {
     padding: 5px;
+    width: 100%;
 }
 
 .right li {
