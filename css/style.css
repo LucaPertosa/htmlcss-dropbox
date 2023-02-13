@@ -26,12 +26,16 @@ a {
 
 .nav-bar {
     height: 60px;
-    min-width: 1000px;
+    /* min-width: 1000px; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
     /* debug */
     border: 1px solid red;
+    position: fixed;
+    z-index: 999;
 }
 
 /* left-side */
@@ -99,4 +103,98 @@ a {
     height: 100%;
     border: 1px solid orange;
 }
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: var(--jumbotron-backgroundcolor);
+    position: relative;
+    /* debug */
+    height: 500px;
+    padding: 100px 0;
+    margin-bottom: 10px;
+}
+
+.jumbotron .container {
+    width: 70%;
+    margin: 0 auto;
+    /* debug */
+    border: 1px solid black;
+    height: 150%;
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    /* debug */
+    border: 1px solid black;
+    height: 40%;
+}
+
+.jumbo-text {
+    width: 30%;
+    /* debug */
+    border: 1px solid orange;
+    height: 60%;
+}
+
+.jumbotron img {
+    max-width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 /* /HEADER */
+
+/* MAIN */
+main .container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* debug */
+    border: 1px solid black;
+    height: 300vh;
+}
+
+/* Plan-selection */
+.plan-selection {
+    width: 100%;
+    height: calc(100% / 6);
+    /* debug */
+    border: 4px solid orangered;
+}
+
+.section-title {
+    width: 100%;
+    height: 20%;
+    /* debug */
+    border: 3px solid cyan;
+}
+
+.option {
+    width: 100%;
+    display: flex;
+    /* debug */
+    height: 80%;    
+    border: 3px solid lightgreen;
+}
+
+.col {
+    width: calc(100% / 3);
+    /* debug */
+    height: 100%;    
+    border: 3px solid lightgreen;
+
+}
+/* /Plan-selection */
+
+/* Sales-office-contact */
+.sales-office-contact {
+    height: 300px;
+    width: 100%;
+    /* debug */
+    border: 4px solid orangered;
+}
+
+
+/* /MAIN */
