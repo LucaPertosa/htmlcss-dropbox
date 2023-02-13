@@ -4,3 +4,91 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+ul {
+    list-style-type: none;
+    /* debug */
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+/* VAIABLES */
+:root {
+    --jumbotron-backgroundcolor: #B4D0E7;
+    --section5-backgroundcolor: #F5F5F5;
+    --section6-title-color: #61082B;
+    --frequent-question-txtcolor: #414141;
+    --button-color: #4185F4;
+}
+/* HEADER */
+
+.nav-bar {
+    height: 60px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* debug */
+    border: 1px solid red;
+}
+
+/* left-side */
+.nav-bar .left {
+    /* debug */
+    width: 30%;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 40%;
+}
+.logo img {
+    max-width: 100%;
+    min-width: fit-content;
+}
+
+.navigation {
+    /* debug */
+    width: 100%;
+    height: 100%;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.left li {
+    width: calc(100% / 3);
+    /* debug */
+    height: 100%;
+    border: 1px solid orange;
+}
+
+/* right-side */
+.nav-bar .right {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* debug */
+    width: 30%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+.small-button span {
+    padding: 5px;
+}
+
+.right li {
+    width: calc(100% / 3);
+    /* debug */
+    height: 100%;
+    border: 1px solid orange;
+}
+/* /HEADER */
