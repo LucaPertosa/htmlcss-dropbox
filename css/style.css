@@ -164,37 +164,110 @@ main .container {
     border: 4px solid orangered;
 }
 
-.section-title {
+.plan-selection .section-title {
     width: 100%;
     height: 20%;
     /* debug */
     border: 3px solid cyan;
 }
 
-.option {
+.plan-selection .option {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     /* debug */
     height: 80%;    
     border: 3px solid lightgreen;
 }
 
-.col {
-    width: calc(100% / 3);
+.plan-selection .col {
+    width: calc(100% / 3 - 10px);
     /* debug */
     height: 100%;    
     border: 3px solid lightgreen;
-
 }
 /* /Plan-selection */
 
 /* Sales-office-contact */
 .sales-office-contact {
-    height: 300px;
+    height: 200px;
     width: 100%;
+    margin: 40px 0;
     /* debug */
     border: 4px solid orangered;
 }
 
+.section-name {
+    text-align: center;
+    height: 30px;
+    /* debug */
+    border: 4px solid fuchsia;
+}
 
+.section-content {
+    height: calc(100% - 30px);
+    /* debug */
+    border: 4px solid rgb(119, 0, 255);
+}
+/* /Sales-office-contact */
+
+/* Partner section */
+.partner-section {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    /* debug */
+    border: 4px solid orangered;
+}
+
+.partner-section .img {
+    width: 70%;
+    /* debug */
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.partner-section .section-content {
+    height: 100%;
+    width: 30%;
+    /* debug */
+    border: 4px solid rgb(17, 204, 120);
+}
+/* /Partner section */
+
+/* Product-description section */
+
+.product-description {
+    margin: 40px 0;
+    height: 400px;
+    /* debug */
+    border: 4px solid orangered;
+}
+
+.product-description .section-title {
+    width: 100%;
+    height: 20%;
+    /* debug */
+    border: 3px solid cyan;
+}
+
+.product-description .option {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* debug */
+    border: 3px solid  rgb(17, 204, 120);
+}
+
+.product-description .col {
+    width: calc(100% / 3 - 10px);
+    /* debug */
+    height: calc(100% / 2 - 10px);
+    border: 3px solid  rgb(17, 204, 120);
+}
+
+/* /Product-description section */
 /* /MAIN */
