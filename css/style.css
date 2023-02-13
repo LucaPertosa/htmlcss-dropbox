@@ -5,13 +5,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+    min-width: 1200px;
+}
+
 ul {
     list-style-type: none;
-    /* debug */
-    height: 100%;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 /* VAIABLES */
@@ -19,89 +23,59 @@ a {
     --jumbotron-backgroundcolor: #B4D0E7;
     --section5-backgroundcolor: #F5F5F5;
     --section6-title-color: #61082B;
+    --nav-bar-txtcolor: #828282;
     --frequent-question-txtcolor: #414141;
     --button-color: #4185F4;
 }
+
 /* HEADER */
 
 .nav-bar {
-    height: 60px;
-    /* min-width: 1000px; */
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    /* debug */
-    border: 1px solid red;
     position: fixed;
     z-index: 999;
 }
 
 /* left-side */
-.nav-bar .left {
-    /* debug */
-    width: 30%;
-    height: 100%;
-    border: 1px solid blue;
+.navigation {
     display: flex;
     align-items: center;
-    text-align: center;
 }
 
 .logo {
-    width: 40%;
-}
-.logo img {
-    max-width: 100%;
-    min-width: fit-content;
-}
-
-.navigation {
-    /* debug */
-    width: 60%;
-    height: 100%;
+    margin: 0 25px;
 }
 
 .navigation ul {
     display: flex;
 }
-
 .left li {
-    width: calc(100% / 3);
-    /* debug */
-    height: 100%;
-    border: 1px solid orange;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    color: var(--nav-bar-txtcolor);
 }
 
 /* right-side */
-.nav-bar .right {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    /* debug */
-    width: 30%;
-    height: 100%;
-    border: 1px solid blue;
-    justify-content: flex-end;
+.small-button {
+    margin: 0 20px;
 }
 
-.right .navigation {
-    width: 80%;
-}
-.small-button {
-    width: 20%;
-}
 .small-button span {
-    padding: 5px;
+    padding: 8px 15px;
+    color: white;
+    background-color: var(--button-color);
     width: 100%;
 }
 
 .right li {
-    width: calc(100% / 3);
-    /* debug */
-    height: 100%;
-    border: 1px solid orange;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    color: var(--nav-bar-txtcolor);
 }
 
 /* Jumbotron */
