@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     min-width: 1200px;
 }
 
@@ -18,6 +18,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
 /* VAIABLES */
 :root {
     --jumbotron-backgroundcolor: #B4D0E7;
@@ -26,6 +27,38 @@ a {
     --nav-bar-txtcolor: #828282;
     --frequent-question-txtcolor: #414141;
     --button-color: #4185F4;
+}
+
+/* Layout */
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.button span {
+    background-color: var(--button-color);
+    padding: 10px 15px;
+    color: white;
+}
+.button {
+    margin: 3rem 0;
+}
+/* common */
+.container {
+    padding: 100px 0;
+}
+.row {
+    display: flex;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.small-button span {
+    padding: 8px 15px;
+    color: white;
+    background-color: var(--button-color);
+    width: 100%;
 }
 
 /* HEADER */
@@ -53,11 +86,13 @@ a {
 
 .navigation ul {
     display: flex;
+
 }
 .left li {
     margin: 0 15px;
     font-size: 1.1rem;
     color: var(--nav-bar-txtcolor);
+    line-height: 80px;
 }
 
 /* right-side */
@@ -65,68 +100,62 @@ a {
     margin: 0 20px;
 }
 
-.small-button span {
-    padding: 8px 15px;
-    color: white;
-    background-color: var(--button-color);
-    width: 100%;
-}
-
 .right li {
     margin: 0 15px;
     font-size: 1.1rem;
     color: var(--nav-bar-txtcolor);
+    line-height: 80px;
 }
 
 /* Jumbotron */
 
 .jumbotron {
     background-color: var(--jumbotron-backgroundcolor);
-    position: relative;
-    /* debug */
-    height: 500px;
-    padding: 100px 0;
-    margin-bottom: 100px;
+    padding-top: 200px;
+    margin-bottom: -60px;
 }
 
-.jumbotron .container {
-    width: 70%;
+.jumbo-container {
+    width: 65%;
     margin: 0 auto;
-    /* debug */
-    border: 1px solid black;
-    height: 150%;
-    position: relative;
 }
 
 .title {
-    width: 100%;
-    /* debug */
-    border: 1px solid black;
-    height: 40%;
+    font-size: 2.5rem;
+    padding: 1rem 0;
 }
 
-.jumbo-text {
+.jumbo-30 {
     width: 30%;
-    /* debug */
-    border: 1px solid orange;
-    height: 60%;
+    padding-bottom: 1rem;
+    position: relative;
 }
 
-.jumbotron img {
-    max-width: 70%;
+.arrow {
+    font-size: 4rem;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 4rem;
+    left: 0;
+}
+
+.jumbo-70 {
+    width: 70%;
+}
+.jumbotron img {
+    max-width: 100%;
 }
 /* /HEADER */
 
 /* MAIN */
+main {
+    background-color: white;
+
+}
 main .container {
     width: 60%;
     margin: 0 auto;
     /* debug */
     border: 1px solid black;
-    /* height: 300vh; */
 }
 
 /* Plan-selection */
