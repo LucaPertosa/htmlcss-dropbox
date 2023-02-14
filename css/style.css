@@ -29,6 +29,15 @@ header a,
     --nav-bar-txtcolor: #828282;
     --frequent-question-txtcolor: #414141;
     --button-color: #4185F4;
+    --designit-b-color: #A2D39B;
+    --designit-bor-color: #D1E9CD;
+    --asu-b-color: #61092A;
+    --wbr-b-color: #D50020;
+    --hearstcorp-b-color: #B4D0E7;
+    --uniflorida-b-color: #1693CE;
+    --topps-b-color: #F81D1E;
+    --lonelyplanet-b-color: #0E2481;
+    --ccout-b-color: #FFD82F;
 }
 
 /* Layout */
@@ -87,7 +96,6 @@ h3 {
 }
 
 h4 {
-    padding-bottom: 1.5rem;
     font-weight: 600;
 }
 .fw-600 {
@@ -362,11 +370,7 @@ main .container {
 
 /* Review */
 .customer-review {
-    width: 100%;
     margin: 40px 0;
-    /* debug */
-    height: 100px;
-    border: 3px solid orangered;
 }
 /* /Review */
 
@@ -378,38 +382,109 @@ main .container {
 }
 
 .memb-view {
-    height: 200px;
+    height: 600px;
     display: flex;
 }
 
 .middle {
     width: calc(100% / 3);
-    border: 1px solid cornflowerblue;
-    height: 100%;
+    padding: 3rem;
+    overflow-y: scroll;
+    /* height: 100%; */
+}
+
+.middle img {
+    width: 50%;
+}
+
+.hr-short {
+    border-bottom: 1px solid lightgrey;
+    width: 30%;
+    margin: 2rem 0;
+}
+
+.cit {
+    margin: 3rem 0;
 }
 
 .side {
     width: calc(100% / 3);
-    border: 1px solid greenyellow;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.side section {
-    width: 50%;
+.square {
+    width: calc(100% /  2 );
     height: 50%;
-    border: 1px solid black;
+    text-align: center;
 }
 
+.designit {
+    background-color: var(--designit-b-color) ;
+    border: 15px solid var(--designit-bor-color);
+}
+
+.asu {
+    background-color: var(--asu-b-color);
+}
+
+.uniflo {
+    background-color: var(--uniflorida-b-color);
+}
+
+.topps {
+    background-color: var(--topps-b-color);
+}
+
+.wbr {
+    background-color: var(--wbr-b-color);
+}
+
+.hearst {
+    background-color: var(--hearstcorp-b-color)
+}
+
+.lonelyp {
+    background-color: var(--lonelyplanet-b-color);
+}
+
+.ccout {
+    background-color: var(--ccout-b-color);
+}
+.square img {
+    max-width: 50%;
+    height: 100%;
+    vertical-align: middle;
+    filter: invert(1) ;
+}
 .try-section {
     width: 100%;
     margin: 0 auto;
     /* debug */
-    border: 1px solid orangered;
-    height: 120px;
     background-color: var(--jumbotron-backgroundcolor);
 }
+
+.try-section .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.try-section .section-title {
+    color: var(--section6-title-color);
+    width: 50%;
+}
+
+.try-section .button-white {
+    width: 30%;
+    text-align: center;
+}
+.button-white div {
+    background-color: white;
+    padding: 10px 30px;
+    border: 1px solid black;
+}
+
 /* /Members */
 
 /* FAQ */
@@ -421,16 +496,27 @@ main .container {
 
 .faq .section-title {
     width: 100%;
-    height: 80px;
     /* debug */
-    border: 2px solid orangered;
 }
 
 .question {
+    padding: 3rem 0;
     width: 100%;
-    height: 80px;
-    /* debug */
-    border: 2px solid lightcoral;
+    position: relative;
+}
+
+.question .pos-a {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    /* transform: translate(-50%, -50%); */
+    padding: 2rem;
+}
+
+.question:active i {
+    transform: rotate(180deg);
+    right: 5%;
+    top: 20%;
 }
 /* /FAQ */
 /* /MAIN */
@@ -440,33 +526,38 @@ main .container {
 footer {
     background-color: black;
     padding: 40px 0;
+    color: white;
 }
 footer .container {
     width: 60%;
     margin: 0 auto;
-    /* debug */
-    border: 1px solid white;
-    height: 300px;
     position: relative;
 }
 
 .footer-row {
     display: flex;
     justify-content: space-between;
-    height: 80%;
+    padding-bottom: 3rem;
 }
 
 footer .col {
     width: calc(100% / 5 - 10px);
-    /* debug */
-    height: 100%;    
-    border: 3px solid lightgreen;
 }
 
+.footer-info h2 {
+    padding: 1rem 0;
+}
+
+.footer-info li {
+    padding: .5rem 0;
+}
 span.language {
     height: 50px;
-    width: 100px;
-    border: 2px solid white;
+    width: 150px;
+    border-top: 1px solid lightgrey;
+    color: lightgray;
+    font-weight: 100;
+    padding: 3rem 0;
     position: absolute;
     bottom: 0;
     left: 0;
