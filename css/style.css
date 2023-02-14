@@ -15,7 +15,8 @@ ul {
 }
 
 header a,
-.button a {
+.button-blue a,
+.button-white a {
     color: inherit;
     text-decoration: none;
 }
@@ -35,21 +36,32 @@ header a,
     padding-top: 2rem;
 }
 
-.button div {
+.button-blue div{
     background-color: var(--button-color);
     padding: 10px 15px;
     color: white;
     text-align: center;
 }
-.button span {
+.button-blue span{
     background-color: var(--button-color);
     padding: 10px 15px;
     color: white;
     text-align: center;
 }
-.button {
+.button-blue {
     margin: 3rem 0;
 }
+
+.button-white {
+    margin: 3rem 0;
+}
+
+.button-white span {
+    background-color: white;
+    padding: 10px 15px;
+    border: 1px solid black;
+}
+
 /* common */
 .container {
     padding: 100px 0;
@@ -68,7 +80,19 @@ header a,
     background-color: var(--button-color);
     width: 100%;
 }
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
 
+h4 {
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+}
+.fw-600 {
+    font-weight: 600;
+}
 /* HEADER */
 
 .nav-bar {
@@ -158,7 +182,7 @@ header a,
 /* MAIN */
 main {
     background-color: white;
-
+    font-weight: 100;
 }
 main .container {
     width: 55%;
@@ -211,14 +235,7 @@ main .container {
     padding: 2rem;
 }
 
-.col-main h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
-}
-
 .col-main .price {
-    font-size: .9rem;
     font-weight: 600;
 }
 .price::before {
@@ -227,7 +244,6 @@ main .container {
 
 .price-info {
     padding: .5rem 0;
-    font-weight: 100;
 }
 
 .plan-info {
@@ -236,7 +252,6 @@ main .container {
 
 .plan-info li {
     padding: .8rem 0;
-    font-weight: 100;
 }
 
 .n-user {
@@ -262,56 +277,56 @@ main .container {
 }
 
 .hot-info li:not(:first-child) {
+    margin-left: 1rem;
+}
+.hot-info li:not(:first-child) {
     list-style-image: url(../img/iconsFA/check-solid.svg);
-    list-style-position: inside;
+    list-style-position: out;
     padding: .8rem 0;
 }
 /* /Plan-selection */
 
 /* Sales-office-contact */
 .sales-office-contact {
-    height: 200px;
-    width: 100%;
-    margin: 40px 0;
-    /* debug */
-    border: 4px solid orangered;
+    margin-top: 40px;
+    border: 1px solid lightgrey
 }
 
 .section-name {
     text-align: center;
-    height: 30px;
-    /* debug */
-    border: 4px solid fuchsia;
 }
 
-.section-content {
-    height: calc(100% - 30px);
-    /* debug */
-    border: 4px solid rgb(119, 0, 255);
+.sales-office-contact .section-content {
+    display: flex;
+}
+
+.content-left {
+    width: 70%;
+    padding: 2rem;
+}
+.content-right {
+    width: 30%;
+    padding: 0 2rem;
 }
 /* /Sales-office-contact */
 
 /* Partner section */
 .partner-section {
-    width: 100%;
-    height: 400px;
+    margin: 140px 0;
     display: flex;
-    /* debug */
-    border: 4px solid orangered;
 }
 
 .partner-section .img {
-    width: 70%;
-    /* debug */
-    height: 100%;
-    border: 1px solid grey;
+    width: 60%;
+}
+.img img {
+    max-width: 100%;
+    display: block;
 }
 
 .partner-section .section-content {
-    height: 100%;
-    width: 30%;
-    /* debug */
-    border: 4px solid rgb(17, 204, 120);
+    width: 40%;
+    padding: 3rem ;
 }
 /* /Partner section */
 
