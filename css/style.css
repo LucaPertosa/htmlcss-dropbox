@@ -14,7 +14,8 @@ ul {
     list-style-type: none;
 }
 
-a {
+header a,
+.button a {
     color: inherit;
     text-decoration: none;
 }
@@ -34,10 +35,17 @@ a {
     padding-top: 2rem;
 }
 
+.button div {
+    background-color: var(--button-color);
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+}
 .button span {
     background-color: var(--button-color);
     padding: 10px 15px;
     color: white;
+    text-align: center;
 }
 .button {
     margin: 3rem 0;
@@ -72,6 +80,7 @@ a {
     background-color: white;
     position: fixed;
     z-index: 999;
+    box-shadow: #414141 1px 1px 1px;
 }
 
 /* left-side */
@@ -152,41 +161,110 @@ main {
 
 }
 main .container {
-    width: 60%;
+    width: 55%;
     margin: 0 auto;
     /* debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* Plan-selection */
-.plan-selection {
-    width: 100%;
-    height: 400px;
-    /* debug */
-    border: 4px solid orangered;
+
+/* plan-selection-title */
+.section-title h2{
+    font-size: 2.5rem;
+    padding: 3rem 0;
 }
 
-.plan-selection .section-title {
-    width: 100%;
-    height: 20%;
-    /* debug */
-    border: 3px solid cyan;
+.plan-selection input {
+    transform: scale(1.3);
+    margin-bottom: 3rem;
 }
 
-.plan-selection .option {
+.plan-selection label {
+    padding-right: 2rem;
+}
+
+/* /plan-selection-title */
+
+/* plan-selection-option */
+.plan-selection .row {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* debug */
-    height: 80%;    
-    border: 3px solid lightgreen;
+    /* debug */  
+    /* border: 3px solid lightgreen; */
 }
 
 .plan-selection .col {
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 3 - 30px);
     /* debug */
-    height: 100%;    
-    border: 3px solid lightgreen;
+    border: 1px solid lightgrey;
+}
+
+.col-heading {
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+    text-align: center;
+}
+
+.col-main {
+    padding: 2rem;
+}
+
+.col-main h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.col-main .price {
+    font-size: .9rem;
+    font-weight: 600;
+}
+.price::before {
+    content: "\20AC"
+}
+
+.price-info {
+    padding: .5rem 0;
+    font-weight: 100;
+}
+
+.plan-info {
+    padding: 2rem 0;
+}
+
+.plan-info li {
+    padding: .8rem 0;
+    font-weight: 100;
+}
+
+.n-user {
+    list-style-position: inside;
+    list-style-image: url(../img/iconsFA/user-solid.svg);
+}
+.space {
+    list-style-image: url(../img/iconsFA/folder-solid.svg);
+    list-style-position: inside;
+}
+.share-info {
+    list-style-image: url(../img/iconsFA/share-nodes-solid.svg);
+    list-style-position: inside;
+}
+
+.buy-now span {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.hot-info {
+    padding-top: 4rem;
+}
+
+.hot-info li:not(:first-child) {
+    list-style-image: url(../img/iconsFA/check-solid.svg);
+    list-style-position: inside;
+    padding: .8rem 0;
 }
 /* /Plan-selection */
 
@@ -331,7 +409,7 @@ main .container {
     padding: 40px 0;
 }
 
-.section-title {
+.faq .section-title {
     width: 100%;
     height: 80px;
     /* debug */
