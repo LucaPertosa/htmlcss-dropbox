@@ -70,11 +70,20 @@ header a,
     padding: 10px 15px;
     border: 1px solid black;
 }
+.small-button {
+    margin: 0 20px;
+}
+.small-button {
+    padding: 8px 15px;
+    color: white;
+    background-color: var(--button-color);
+}
 
 /* common */
 .container {
     padding: 100px 0;
 }
+
 .row {
     display: flex;
 }
@@ -83,12 +92,6 @@ header a,
     justify-content: space-between;
 }
 
-.small-button span {
-    padding: 8px 15px;
-    color: white;
-    background-color: var(--button-color);
-    width: 100%;
-}
 h3 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -115,6 +118,34 @@ h4 {
     box-shadow: #414141 1px 1px 1px;
 }
 
+
+.nav-bar a:hover:not(.logo, .small-button a){
+    border-bottom: 2px solid var(--nav-bar-txtcolor);
+    padding-bottom: 25px;
+}
+
+.small-button:hover {
+    background-color: darkblue;
+}
+
+.button-blue span:hover {
+    background-color: darkblue;
+}
+
+.button-blue div:hover {
+    background-color: darkblue;
+}
+
+.button-white span:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+.button-white div:hover {
+    background-color: darkgray;
+    color: white;
+}
+
 /* left-side */
 .navigation {
     display: flex;
@@ -127,25 +158,14 @@ h4 {
 
 .navigation ul {
     display: flex;
-
-}
-.left li {
-    margin: 0 15px;
-    font-size: 1.1rem;
-    color: var(--nav-bar-txtcolor);
-    line-height: 80px;
 }
 
-/* right-side */
-.small-button {
-    margin: 0 20px;
-}
-
+.left li,
 .right li {
     margin: 0 15px;
     font-size: 1.1rem;
     color: var(--nav-bar-txtcolor);
-    line-height: 80px;
+    /* line-height: 80px; */
 }
 
 /* Jumbotron */
@@ -172,10 +192,9 @@ h4 {
     position: relative;
 }
 
-.arrow {
-    font-size: 4rem;
+.jumbo-30 i {
     position: absolute;
-    bottom: 4rem;
+    bottom: 0;
     left: 0;
 }
 
@@ -223,13 +242,10 @@ main .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* debug */  
-    /* border: 3px solid lightgreen; */
 }
 
 .plan-selection .col {
     width: calc(100% / 3 - 30px);
-    /* debug */
     border: 1px solid lightgrey;
 }
 
@@ -260,19 +276,20 @@ main .container {
 
 .plan-info li {
     padding: .8rem 0;
+    margin-left: 1rem;
 }
 
 .n-user {
-    list-style-position: inside;
+    list-style-position: outside;
     list-style-image: url(../img/iconsFA/user-solid.svg);
 }
 .space {
     list-style-image: url(../img/iconsFA/folder-solid.svg);
-    list-style-position: inside;
+    list-style-position: outside;
 }
 .share-info {
     list-style-image: url(../img/iconsFA/share-nodes-solid.svg);
-    list-style-position: inside;
+    list-style-position: outside;
 }
 
 .buy-now span {
@@ -284,13 +301,18 @@ main .container {
     padding-top: 4rem;
 }
 
+.hot-info li {
+    position: relative;
+    padding: 1rem 0;
+}
 .hot-info li:not(:first-child) {
     margin-left: 1rem;
 }
-.hot-info li:not(:first-child) {
-    list-style-image: url(../img/iconsFA/check-solid.svg);
-    list-style-position: out;
-    padding: .8rem 0;
+
+.hot-info i {
+    position: absolute;
+    left: -2rem;
+    color: var(--button-color);
 }
 /* /Plan-selection */
 
@@ -375,22 +397,16 @@ main .container {
 /* /Review */
 
 /* Members */
-.members {
-    width: 100%;
-    /* debug */
-    border: 3px solid black;
-}
-
 .memb-view {
-    height: 600px;
     display: flex;
 }
 
 .middle {
     width: calc(100% / 3);
+    height: calc(100vw / 3);
+    background-color: var(--section5-backgroundcolor);
     padding: 3rem;
     overflow-y: scroll;
-    /* height: 100%; */
 }
 
 .middle img {
@@ -409,6 +425,7 @@ main .container {
 
 .side {
     width: calc(100% / 3);
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
