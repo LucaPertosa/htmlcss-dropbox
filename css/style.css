@@ -522,7 +522,12 @@ main .container {
     position: relative;
 }
 
-.question .pos-a {
+.question p {
+    padding: 2rem 0;
+    display: none;
+}
+
+.question i {
     position: absolute;
     right: 5%;
     top: 20%;
@@ -530,10 +535,15 @@ main .container {
     padding: 2rem;
 }
 
-.question:active i {
+.question:hover i {
     transform: rotate(180deg);
     right: 5%;
     top: 20%;
+}
+
+.question:hover p{
+    display: inline-block;
+    padding: 2rem 0;
 }
 /* /FAQ */
 /* /MAIN */
