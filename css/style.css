@@ -190,11 +190,12 @@ h4 {
     width: 30%;
     padding-bottom: 1rem;
     position: relative;
+    overflow-y: scroll;
 }
 
 .jumbo-30 i {
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     left: 0;
 }
 
@@ -517,7 +518,7 @@ main .container {
 }
 
 .question {
-    padding: 3rem 0;
+    margin: 3rem 0;
     width: 100%;
     position: relative;
 }
@@ -529,16 +530,16 @@ main .container {
 
 .question i {
     position: absolute;
-    right: 5%;
-    top: 20%;
+    right: 0;
+    bottom: 0;
     /* transform: translate(-50%, -50%); */
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .question:hover i {
     transform: rotate(180deg);
-    right: 5%;
-    top: 20%;
+    right: 0;
+    bottom: 50%;
 }
 
 .question:hover p{
